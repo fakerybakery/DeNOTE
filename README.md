@@ -7,5 +7,10 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 
 All code &copy; 2022 mrfakename. All rights reserved.
 
+## How to report a security vulnerability
+
+1. Please, email me! My email is me [ at ] mrfake [ dot ] name!
+2. Just in case I didn't get the email, submit a GH issue! (Don't disclose the whole vulnerability in the issue or it will be public to everyone!) Just let me know to check my spam folder
+3. THANK YOU!!!
 
 <sub><sup><sup>1</sup>As an anonymous observer pointed out, if DeNOTE is decrypted on the server side, it is not truly zero-knowledge. However it is open-sourced and you can run it on your own server.</sup></sub>
