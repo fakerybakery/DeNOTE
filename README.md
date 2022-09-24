@@ -5,6 +5,20 @@ WHAT IT DOES: DeNOTE is an encrypted, open-sourced, ~~zero-knowledge~~ no-data-s
 
 You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your MySQL server and modify `src/index.php` to fit your needs.
 
+## Try it out
+
+### Active Installations
+
+<sub><sup>You can add your server by making a Pull Request.</sup></sub>
+
+
+**Please note that many of the installations listed below are not owned by DeNOTE, be careful. Installations not owned by DeNOTE do NOT guarentee any type of data security or privacy!**
+
+Do you want to see how DeNOTE works without installing it yourself? Check out the servers below!
+|Server URL|Server status|Approved|
+|---|---|---|
+|https://www.mrfake.name/denote/|**Active**|Approved|
+
 ## FAQ
 
 **Q: Why delete it (forever) after one incorrect try?**
