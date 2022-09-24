@@ -7,9 +7,16 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 
 ## FAQ
 
-Q: Why delete it (forever) after one incorrect try? A: I don't want brute force attacks. I could let someone try 5 or 10 times, but if they have a list of commonly used passwords, it would be more secure to only allow it _once_.
+**Q: Why delete it (forever) after one incorrect try?**
 
-Q: How is this more secure than another private encrypted note taking platform? A: 1. It destroys itself when you read it or when you get the password wrong. 2. It is open sourced. 3. You host it yourself!
+A: I don't want brute force attacks. I could let someone try 5 or 10 times, but if they have a list of commonly used passwords, it would be more secure to only allow it _once_.
+
+**Q: How is this more secure than another private encrypted note taking platform?**
+A:
+
+1. It destroys itself when you read it or when you get the password wrong.
+2. It is open sourced.
+3. You host it yourself!
 
 ## How to report a security vulnerability
 
