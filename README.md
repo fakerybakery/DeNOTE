@@ -7,7 +7,7 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 
 ## Try it out
 
-<img width="1393" alt="CleanShot 2023-01-17 at 15 17 23@2x" src="https://user-images.githubusercontent.com/76186054/213033366-b53aff83-45ec-4cb6-aad7-587abe86f6a6.png">
+<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/213033366-b53aff83-45ec-4cb6-aad7-587abe86f6a6.png"></a>
 
 ### Active Installations
 
