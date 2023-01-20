@@ -1,11 +1,16 @@
 <?php
 
-
+# Config
 $conn = mysqli_connect('localhost', 'root', 'root', 'denote');
 
 
 $base_url = 'https://base-api-url/denote?id='; // Path to index.php
+# End Config
 
+
+
+
+$version = '0.3-beta';
 
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -56,7 +61,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     <h3>The note you're looking for has either been deleted or has not been created.</h3>
     <a href="<?=htmlspecialchars($base_url)?>" class="btn btn-success">DeNOTE Homepage</a>
     <p>Encrypted with AES-256-CBC.</p>
-    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
@@ -96,7 +101,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     <p>Sorry, you made a typo or got the password wrong on this note. Now it's gone. Forever.</p>
     <a href="<?=htmlspecialchars($base_url)?>" class="btn btn-success">DeNOTE Homepage</a>
     <p>Encrypted with AES-256-CBC.</p>
-    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
@@ -133,7 +138,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     <h3>Here's your note:</h3>
     <div class="card p-3"><?=nl2br(htmlspecialchars($decrypted))?></div>
     <p><b>This note has been destroyed.</b> Don't reload the page - this note will disappear. This note was encrypted using AES-256-CBC with DeNOTE.</p>
-    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
@@ -177,6 +182,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
       <button class="btn btn-danger" type="submit">Decrypt</button>
     </form>
     <p>Encrypted with AES-256-CBC.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
@@ -214,6 +220,7 @@ if (!empty($_POST['note']) && !empty(trim($_POST['note'])) && !empty($_POST['pas
     <p>Your note URL:</p>
     <input type="text" value="<?=htmlspecialchars($base_url . $noteid)?>" class="form-control" disabled readonly>
     <p>Encrypted with AES-256-CBC.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
@@ -253,7 +260,7 @@ if (!empty($_POST['note']) && !empty(trim($_POST['note'])) && !empty($_POST['pas
       <button class="btn btn-primary" type="submit">Create Note</button>
     </form>
     <p>Encrypted with AES-256-CBC.</p>
-    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>.</p>
+    <p>&copy; 2022 The DeNOTE Project. All rights reserved. DeNOTE does not endorse or create user-generated notes. <a href="https://github.com/DeNOTE-Project/DeNOTE/">Check out DeNOTE on GitHub</a>. DeNOTE version <?=$version?>.</p>
   </body>
 
 </html>
