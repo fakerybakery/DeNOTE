@@ -17,9 +17,9 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 **Please note that many of the installations listed below are not owned by DeNOTE, be careful. Installations not owned by DeNOTE do NOT guarentee any type of data security or privacy!**
 
 Do you want to see how DeNOTE works without installing it yourself? Check out the servers below!
-|Server URL|Server status|Approved|
-|---|---|---|
-|https://www.mrfake.name/denote/|**Active**|Approved|
+|Server URL|Server status|Approved|Version|
+|---|---|---|---|
+|https://www.mrfake.name/denote/|**Active**|Approved|0.3 (latest)|
 
 ## FAQ
 
