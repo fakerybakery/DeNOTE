@@ -250,11 +250,11 @@ if (!empty($_POST['note']) && !empty(trim($_POST['note'])) && !empty($_POST['pas
     <form method="post">
       <div class="form-group">
         <label for="note">Note:</label>
-        <textarea name="note" id="note" class="form-control" placeholder="Write your note here..."></textarea>
+        <textarea name="note" id="note" class="form-control" placeholder="Write your note here..." autofocus></textarea>
       <div class="form-group">
       </div>
         <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="Password" class="form-control" autofocus>
+        <input type="password" name="password" placeholder="Password" class="form-control">
       </div>
       <p></p>
       <button class="btn btn-primary" type="submit">Create Note</button>
