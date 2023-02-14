@@ -1,5 +1,5 @@
 <?php
-
+include 'init.php';
 # Config moved to init.php
 
 if ($delete_old_notes) {
