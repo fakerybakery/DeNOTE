@@ -19,7 +19,7 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 Do you want to see how DeNOTE works without installing it yourself? Check out the servers below!
 |Server URL|Server status|Approved|Version|
 |---|---|---|---|
-|https://www.mrfake.name/denote/|**Active**|Approved|0.3 (latest)|
+|https://www.mrfake.name/denote/|**Active**|Approved|0.4 (latest)|
 
 ## FAQ
 
