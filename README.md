@@ -3,7 +3,9 @@ Welcome to DeNOTE, the private encrypted one-view-then-self-destruct note taking
 
 WHAT IT DOES: DeNOTE is an encrypted, open-sourced, ~~zero-knowledge~~ no-unencrypted-data-stored<sup>1</sup> note taking platform. You input a note and password. You get a shareable link. The note is deleted when someone either successfully decrypts the note or gets the password wrong. There is zero-tolerance for getting the password wrong - the note will just be deleted forever.
 
-Copy the `src` directory to your server. Run `INSTALL.sql` in your MySQL server and modify `init.php` to fit your needs.
+## Installation
+
+For installation instructions, please review [the wiki](https://github.com/fakerybakery/DeNOTE/wiki/Installation).
 
 ## Features
 
