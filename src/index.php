@@ -75,7 +75,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         $stmtcheck->execute();
         $rescheck = $stmtcheck->get_result();
         $content = mysqli_fetch_array($rescheck)['note'];
-        if (!openssl_decrypt($content, 'AES-256-CBC', $_POST['password'])) {
+        if (!@openssl_decrypt($content, 'AES-256-CBC', $_POST['password'])) {
             $stmtdestroy = $conn->prepare('DELETE FROM note WHERE noteid = ?');
             $stmtdestroy->bind_param('s', $_GET['id']);
             $stmtdestroy->execute();
@@ -197,7 +197,7 @@ if (!empty($_POST['note']) && !empty(trim($_POST['note'])) && !empty($_POST['pas
     } else {
         $noteid = getNoteID();
         $stmt = $conn->prepare('INSERT INTO note (note, noteid) VALUES (?, ?)');
-        $note = openssl_encrypt($_POST['note'],"AES-256-CBC",$_POST['password']);
+        $note = @openssl_encrypt($_POST['note'],"AES-256-CBC",$_POST['password']);
         $stmt->bind_param('ss', $note, $noteid);
         $stmt->execute();
         ?>
