@@ -2,7 +2,10 @@
 
 # Config
 $conn = mysqli_connect('localhost', 'root', 'root', 'denote');
-
+$iv = "0000000000000000"; // string of numbers, length 16
+if (strlen($iv) !== 16) {
+  die("Sorry, your IV key length != 16");
+}
 
 $base_url = 'https://base-api-url/denote?id='; // Path to index.php
 # End Config
@@ -75,7 +78,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         $stmtcheck->execute();
         $rescheck = $stmtcheck->get_result();
         $content = mysqli_fetch_array($rescheck)['note'];
-        if (!@openssl_decrypt($content, 'AES-256-CBC', $_POST['password'])) {
+        if ((!openssl_decrypt($content, 'AES-256-CBC', $_POST['password'], 0, "$iv")) && (!openssl_decrypt($content, 'AES-256-CBC', $_POST['password']))) {
             $stmtdestroy = $conn->prepare('DELETE FROM note WHERE noteid = ?');
             $stmtdestroy->bind_param('s', $_GET['id']);
             $stmtdestroy->execute();
@@ -111,8 +114,10 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         $stmtdestroy = $conn->prepare('DELETE FROM note WHERE noteid = ?');
         $stmtdestroy->bind_param('s', $_GET['id']);
         $stmtdestroy->execute();
-
-        $decrypted = openssl_decrypt($content, 'AES-256-CBC', $_POST['password']);
+        $decrypted = openssl_decrypt($content, 'AES-256-CBC', $_POST['password'], 0, "$iv");
+        if (!$decrypted) {
+          $decrypted = openssl_decrypt($content, 'AES-256-CBC', $_POST['password']);
+        }
 //         echo 'Here is your note: (It has been destroyed, you cannot view it again.)
 ?>
             <html lang="en">
@@ -197,7 +202,7 @@ if (!empty($_POST['note']) && !empty(trim($_POST['note'])) && !empty($_POST['pas
     } else {
         $noteid = getNoteID();
         $stmt = $conn->prepare('INSERT INTO note (note, noteid) VALUES (?, ?)');
-        $note = @openssl_encrypt($_POST['note'],"AES-256-CBC",$_POST['password']);
+        $note = openssl_encrypt($_POST['note'],"AES-256-CBC",$_POST['password'],0,"$iv");
         $stmt->bind_param('ss', $note, $noteid);
         $stmt->execute();
         ?>
