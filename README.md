@@ -16,8 +16,11 @@ Copy the `src` directory to your server. Run `INSTALL.sql` in your MySQL server 
 
 <a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218612453-34865eb0-e2b5-45ca-89be-97b4da5e6859.png"></a>
 
+## JSON API Documentation
 
-### Active Installations
+The JSON API Documentation is available [on the project Wiki](https://github.com/fakerybakery/DeNOTE/wiki/API-Docs).
+
+## Active Installations
 
 <sub><sup>You can add your server by making a Pull Request.</sup></sub>
 
