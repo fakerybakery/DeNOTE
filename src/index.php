@@ -13,7 +13,7 @@ $base_url = 'https://base-api-url/denote?id='; // Path to index.php
 
 
 
-$version = '0.3-beta';
+$version = '0.4-beta';
 
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
