@@ -16,7 +16,7 @@ For installation instructions, please review [the wiki](https://github.com/faker
 
 ## Try it out
 
-<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218612453-34865eb0-e2b5-45ca-89be-97b4da5e6859.png"></a>
+<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218871729-39fba215-897a-489e-a92a-31edbd7169a6.png"></a>
 
 ## JSON API Documentation
 
