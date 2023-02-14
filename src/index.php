@@ -6,8 +6,6 @@ if ($delete_old_notes) {
     $conn->query('DELETE FROM note WHERE datecreated < now() - INTERVAL 30 DAY');
 }
 
-$version = '0.4-beta';
-
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
