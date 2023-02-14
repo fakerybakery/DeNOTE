@@ -7,8 +7,10 @@ Copy the `src` directory to your server. Run `INSTALL.sql` in your MySQL server 
 
 ## Features
 
-- [ ] JSON API
-- [ ] Self-Destruction after View
+- JSON API
+- Self-Destruction after View
+- Advanced AES-256-CBC encryption
+- Many more features
 
 ## Try it out
 
