@@ -30,7 +30,7 @@ The JSON API Documentation is available [on the project Wiki](https://github.com
 Do you want to see how DeNOTE works without installing it yourself? Check out the servers below!
 |Server URL|Server status|Approved|Version|
 |---|---|---|---|
-|https://www.mrfake.name/denote/|**Active**|Approved|0.4 (latest)|
+|https://www.mrfake.name/denote/|**Active**|Approved|0.5 (latest)|
 
 ## FAQ
 
