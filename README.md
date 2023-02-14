@@ -7,7 +7,8 @@ You can get the code in `src/index.php`. Make sure to run `INSTALL.sql` in your 
 
 ## Try it out
 
-<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/213033366-b53aff83-45ec-4cb6-aad7-587abe86f6a6.png"></a>
+<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218612453-34865eb0-e2b5-45ca-89be-97b4da5e6859.png"></a>
+
 
 ### Active Installations
 
