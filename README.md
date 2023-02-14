@@ -44,10 +44,7 @@ A:
 
 ## Next Steps
 
-- [ ] Create a JSON API
-- [ ] Allow multiple note views (allow user to set number of views)
-- [ ] Allow user to set how many wrong tries before self destructions
-- [ ] Delete old notes
+Moved to [the project](https://github.com/users/fakerybakery/projects/1).
 
 <sub><sup><sup>1</sup>As an anonymous observer pointed out, if DeNOTE is decrypted on the server side, it is not truly zero-knowledge. However it is open-sourced and you can run it on your own server.</sup></sub>
 
