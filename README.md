@@ -38,6 +38,10 @@ Do you want to see how DeNOTE works without installing it yourself? Check out th
 
 Please, email me! My email is me [ at ] mrfake [ dot ] name!
 
+## Need Help?
+
+Please file a GitHub issue or email me.
+
 ## Next Steps
 
 Moved to [the project](https://github.com/users/fakerybakery/projects/1).
