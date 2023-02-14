@@ -9,4 +9,4 @@ $delete_old_notes = true; # Auto-delete notes older than 30 days
 
 $base_url = 'https://base-api-url/denote?id='; // Path to index.php
 # End Config
-$version = '0.4-beta';
+$version = '0.5-beta';
