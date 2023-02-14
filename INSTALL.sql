@@ -5,7 +5,8 @@ SET time_zone = "-08:00";
 CREATE TABLE `note` (
   `id` int(11) NOT NULL,
   `note` longtext NOT NULL,
-  `noteid` varchar(255) NOT NULL
+  `noteid` varchar(255) NOT NULL,
+  `datecreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
