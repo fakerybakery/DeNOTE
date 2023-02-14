@@ -5,6 +5,11 @@ WHAT IT DOES: DeNOTE is an encrypted, open-sourced, ~~zero-knowledge~~ no-unencr
 
 Copy the `src` directory to your server. Run `INSTALL.sql` in your MySQL server and modify `init.php` to fit your needs.
 
+## Features
+
+- [ ] JSON API
+- [ ] Self-Destruction after View
+
 ## Try it out
 
 <a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218612453-34865eb0-e2b5-45ca-89be-97b4da5e6859.png"></a>
