@@ -16,7 +16,9 @@ For installation instructions, please review [the wiki](https://github.com/faker
 
 ## Try it out
 
-<a href="https://www.mrfake.name/denote"><img src="https://user-images.githubusercontent.com/76186054/218871729-39fba215-897a-489e-a92a-31edbd7169a6.png"></a>
+Sorry, the hosted instance has been removed.
+
+<img src="https://user-images.githubusercontent.com/76186054/218871729-39fba215-897a-489e-a92a-31edbd7169a6.png">
 
 ## JSON API Documentation
 
@@ -32,11 +34,10 @@ The JSON API Documentation is available [on the project Wiki](https://github.com
 Do you want to see how DeNOTE works without installing it yourself? Check out the servers below!
 |Server URL|Server status|Approved|Version|
 |---|---|---|---|
-|https://www.mrfake.name/denote/|_Disabled_|Approved|0.5 (latest)|
 
 ## How to report a security vulnerability
 
-Please, email me! My email is me [ at ] mrfake [ dot ] name!
+Please email me.
 
 ## Need Help?
 
@@ -48,4 +49,4 @@ Moved to [the project](https://github.com/users/fakerybakery/projects/1).
 
 <sub><sup><sup>1</sup>As an anonymous observer pointed out, if DeNOTE is decrypted on the server side, it is not truly zero-knowledge. However it is open-sourced and you can run it on your own server.</sup></sub>
 
-All code &copy; 2022 mrfakename. All rights reserved.
+All code &copy; 2023 mrfakename. All rights reserved.
